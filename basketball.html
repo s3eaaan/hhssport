@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>HHS Sport</title>
+    <style>
+
+        /*Different background image*/
+
+        body {
+            background-image: url('pics/basketballBackground.png');
+        }
+        
+        #roster {
+            margin-top: 28.7%;
+        }
+
+
+        #roster > ul > li {
+            margin-left: 2%;
+        }
+
+
+        /*MAKE EACH SQUARE INLINE WITH OTHER*/
+
+        #roster > ul > #playerTwo {
+            padding-right: 143px;
+        }
+
+        #roster > ul > #playerThree {
+            padding-right: 100px;
+        }
+
+        #roster > ul > #playerSix {
+            padding-right: 125px;
+        }
+
+        #roster > ul > #playerSeven {
+            padding-right: 147px;
+        }
+
+        #roster > ul > #playerEight {
+            padding-right: 180px;
+        }
+
+        #roster > ul > #playerNine {
+            padding-right: 133px;
+        }
+
+        #roster > ul > #playerTen {
+            padding-right: 130px;
+        }
+
+        #roster > ul > #playerTwelve {
+            padding-right: 157px;
+        }
+
+        .childOne {
+            background-image: url('pics/basketballPicOne.png');
+        }
+
+        .childTwo {
+            background-image: url('pics/basketballPicTwo.png');
+        }
+
+        .childThree {
+            background-image: url('pics/basketballPicThree.png');
+        }
+
+        .photos {
+            margin-left: -14.8px;
+        }
+
+        #results {
+            background-image: url('pics/bball.jpg');
+        }
+
+    </style>
+</head>
+<body>
+    <a href = 'https://www.hhs.school.nz/' target="_blank"><img src = 'pics/hendersonhigh.png' alt = 'Henderson High School Logo' class = 'logo'></a>
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html" id = 'current'>Home</a></li>
+            <li>
+                <a href="#" id = 'sports'>Sports ▾</a>
+                <ul class="dropdown">
+                    <li><a href="basketball.html">Basketball</a></li>
+                    <li><a href="football.html">Football</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#draws">Draws</a></li>
+            <li><a href="#">About Us</a></li>  
+        </ul>
+    </div>
+    <div id = 'top'>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+        <h1>Henderson High School <br> Basketball</h1>
+        <h3>Home of the U17 and U15 Basketball Champions</h3>
+    </div>
+    <div id="roster">
+        <h1>HHS Under 17 <br> Maroon Basketball Roster</h1>
+        <ul>
+            <li id = 'playerOne'><h3>#27</h3>  <p>Sean Reyes<br>Shooting Guard</p></li>
+            <li id = 'playerTwo'><h3>#14</h3>  <p>Falaniko Taito<br>Small Forward</p></li>
+            <li id = 'playerThree'><h3>#67</h3>  <p>Fonteyne Webster<br>Point Guard</p></li>
+            <li id = 'playerFour'><h3>#45</h3>  <p>Blake Peters<br>Shooting Guard</p></li>
+            <li id = 'playerFive'><h3>#62</h3>  <p>Faamate Luatutu<br>Power Forward</p></li>
+            <li id = 'playerSix'><h3>#6</h3>  <p>Isaac Priest<br>Shooting Guard</p></li>
+            <li id = 'playerSeven'><h3>#48</h3>  <p>Ruben Taivai<br>Center</p></li>
+            <li id = 'playerEight'><h3>#1</h3>  <p>Carlos Mio<br>Center</p></li>
+            <li id = 'playerNine'><h3>#69</h3>  <p>Dios Katoa<br>Power Forward</p></li>
+            <li id = 'playerTen'><h3>#15</h3>  <p>Armani Tuck<br>Small Forward</p></li>
+            <li id = 'playerEleven'><h3>#9</h3>  <p>Alfred Sanmocte<br>Point Guard</p></li>
+            <li id = 'playerTwelve'><h3>#10</h3>  <p>Shawn Grant<br>Center</p></li>
+        </ul>
+    </div>
+    <div id = 'results'>
+        <h1>Results</h1>
+        <div id = 'drawOne'>
+            <div class = 'drawsTop'> Week 1 </div>
+            <h3>Henderson vs Onehunga HS</h3>
+            <p>Final Score<br> 89 - 90</p>
+        </div>
+        <div id = 'drawTwo'>
+            <div class = 'drawsTop'> Week 2 </div>
+            <h3>Henderson @ ACG Sunderland</h3>
+            <p>Final Score<br> 45 - 54</p>
+        </div>
+        <div id = 'drawThree'>
+            <div class = 'drawsTop'> Week 3 </div>
+            <h3>Henderson vs Kelston Boys</h3>
+            <p>Final Score<br> 23 - 56</p>
+        </div>
+        <div id = 'drawFour'>
+            <div class = 'drawsTop'> Week 4 </div>
+            <h3>Henderson @ Liston College</h3>
+            <p>Final Score<br> 32 - 45</p>
+        </div>
+    </div>
+    <div id="gallery">
+        <h1>Photos</h1>
+        <div class="photos">
+            <div class = 'childOne'></div>
+        </div>
+        <h2 id="first">Men's Basketball</h2>
+        <h3 id="firstSmall">April 28, 2024: Henderson vs Onehunga</h3>
+        <div class="photos">
+            <div class = "childTwo"></div>
+        </div>
+        <h2 id="second">Men's Basketball</h2>
+        <h3 id="secondSmall">April 28, 2024: Henderson vs Onehunga</h3>
+        <div class = "photos">
+            <div class = 'childThree'></div>
+        </div>
+        <h2 id="third">Men's Basketball</h2>
+        <h3 id="thirdSmall">April 28, 2024: Henderson vs Onehunga</h3>
+    </div>
+    <footer>
+        <img src = 'pics/hendersonhigh.png' alt = 'Henderson High School Logo'>
+        <h4>The official sports website of Henderson High School</h4>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("sidebar").style.height = "114px";
+          var x = document.getElementById("sidebar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
