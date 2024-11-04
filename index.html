@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleIndex.css">
+    <title>HHS Sport</title>
+    <style>
+
+        body {
+            background-image: url('pics/hendersonhighschool.jpg');
+        }
+
+        #draws {
+            background-image: url('pics/team.png');
+        }
+    </style>
+</head>
+<body>
+    <a href = 'https://www.hhs.school.nz/' target="_blank"><img src = 'pics/hendersonhigh.png' alt = 'Henderson High School Logo' class = 'logo'></a>
+    <div id="sidebar">  <!-- Navbar -->
+        <ul>
+            <li><a href="index.html" id = 'current'>Home</a></li>
+            <li>
+                <a href="#" id = 'sports'>Sports ▾</a>
+                <ul class="dropdown">  <!-- Dropdown all sports -->
+                    <li><a href="basketball.html" target="_blank">Basketball</a></li>
+                    <li><a href="football.html" target="_blank">Football</a></li>
+                </ul>
+            </li>
+            <li><a href="#draws">Draws</a></li>
+        </ul>
+    </div>
+    <div id = 'top'>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>   <!-- Click button to expand nav -->
+        <h1>Henderson High School <br> Sport</h1>
+        <h3>Home of the U17 and U15 Basketball Champions</h3>
+    </div>
+    <div id = "content"> <!-- This week's sports news -->
+            <h1>Latest news: </h1>
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.hhs.school.nz/wp-content/uploads/2022/09/netball-2.jpg" alt="Netball" title="Netball" >
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veritatis, molestias dicta porro quos rem illo non perspiciatis in cupiditate soluta tenetur eaque suscipit aliquid praesentium atque! Numquam, voluptatum reiciendis. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repudiandae laborum, fugit animi in qui maiores suscipit nostrum provident aperiam ullam explicabo, ducimus autem a fugiat asperiores similique voluptate vero?</p>
+                <a href = "https://www.hhs.school.nz/2022/09/05/netball-2022-season/" target = "_blank">Learn More</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="img-box">
+                <img src = "https://www.hhs.school.nz/wp-content/uploads/2022/05/277794950_1585773968471284_489610154858299640_n.jpg" alt = "Volleyball" title = "Volleyball">
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veritatis, molestias dicta porro quos rem illo non perspiciatis in cupiditate soluta tenetur eaque suscipit aliquid praesentium atque! Numquam, voluptatum reiciendis. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repudiandae laborum, fugit animi in qui maiores suscipit nostrum provident aperiam ullam explicabo, ducimus autem a fugiat asperiores similique voluptate vero?</p>
+                <a href = "https://www.hhs.school.nz/2022/05/05/volleyball-april-2022/" target = "_blank">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.hhs.school.nz/wp-content/uploads/2022/09/netball-2.jpg" alt="Netball" title="Netball" >
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veritatis, molestias dicta porro quos rem illo non perspiciatis in cupiditate soluta tenetur eaque suscipit aliquid praesentium atque! Numquam, voluptatum reiciendis. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repudiandae laborum, fugit animi in qui maiores suscipit nostrum provident aperiam ullam explicabo, ducimus autem a fugiat asperiores similique voluptate vero?</p>
+                <a href = "https://www.hhs.school.nz/2022/09/05/netball-2022-season/" target = "_blank">Learn More</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="img-box">
+                <img src = "https://www.hhs.school.nz/wp-content/uploads/2022/05/277794950_1585773968471284_489610154858299640_n.jpg" alt = "Volleyball" title = "Volleyball">
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veritatis, molestias dicta porro quos rem illo non perspiciatis in cupiditate soluta tenetur eaque suscipit aliquid praesentium atque! Numquam, voluptatum reiciendis. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repudiandae laborum, fugit animi in qui maiores suscipit nostrum provident aperiam ullam explicabo, ducimus autem a fugiat asperiores similique voluptate vero?</p>
+                <a href = "https://www.hhs.school.nz/2022/05/05/volleyball-april-2022/" target = "_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div id = "draws"> <!-- Upcoming game draws -->
+        <h1>This week's draws: </h1>
+        <div id = 'drawOne'>
+            <div class = 'drawsTop'> Basketball </div>
+            <h3>Draw One</h3>
+            <p>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. </p>
+        </div>
+        <div id = 'drawTwo'>
+            <div class = 'drawsTop'> Football </div>
+            <h3>Draw Two</h3>
+            <p>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. </p>
+        </div>
+        <div id = 'drawThree'>
+            <div class = 'drawsTop'> Hockey </div>
+            <h3>Draw Three</h3>
+            <p>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. </p>
+        </div>
+        <div id = 'drawFour'>
+            <div class = 'drawsTop'> Rugby </div>
+            <h3>Draw Four</h3>
+            <p>Lorem ipsum dolor sit, <br> amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <div id = 'highlights'> <!-- Recent highlights of sport games -->
+        <h1>Highlights</h1>
+            <a href="https://www.instagram.com/p/C-HsHFRBcgQ/" target="_blank"><img src="pics/basketballPicOne.png" alt="HighlightOne" class='one'></a>
+            <img src="pics/play.png" alt="" id = overlayOne>
+            <a href="https://www.instagram.com/p/C-zTdoIBnuP/" target="_blank"><img src="pics/footballPicTwo.png" alt="HighlightTwo" class = 'two'></a>
+            <img src="pics/play.png" alt="" id = overlayTwo>
+            <a href="https://www.instagram.com/p/C-HfMsgBk0L/" target="_blank"><img src="pics/highlightsOne.png" alt="HighlightThree" class = 'three'></a>
+            <img src="pics/play.png" alt="" id = overlayThree>
+            <a href="https://www.instagram.com/p/C-H62rRBu_O/" target="_blank"><img src="pics/highlightsFour.png" alt="HighlightFour" class = 'four'></a>
+            <img src="pics/play.png" alt="" id = overlayFour>
+            <h3>Watch as the Under 15 Basketball team <br> defeat Waitakere College to ensure<br> second place in the tournament</h3>
+
+            <h3>Watch as the Under 15 Football team <br> defeat Avondale College to become<br> champions in their bracket</h3>
+
+            <h3>Watch as the Under 17 Basketball team <br> demolish ACG Sunderland to ensure<br> third place in the tournament</h3>
+
+            <h3>Watch the HHS Hockey Team<br> defeat their rivals to ensure<br> in a stunning 5-0 win.</h3>
+    </div>
+    <footer>
+        <img src = 'pics/hendersonhigh.png' alt = 'Henderson High School Logo'>
+        <h4>The official sports website of Henderson High School</h4>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("sidebar").style.height = "114px";
+          var x = document.getElementById("sidebar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+          
+        }
+    </script>
+</body>
+</html>
